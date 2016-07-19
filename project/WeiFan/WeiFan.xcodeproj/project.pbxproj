@@ -14,6 +14,12 @@
 		CF238C921D3DDB9B006AA2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF238C901D3DDB9B006AA2E3 /* Main.storyboard */; };
 		CF238C941D3DDB9B006AA2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF238C931D3DDB9B006AA2E3 /* Assets.xcassets */; };
 		CF238C971D3DDB9B006AA2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF238C951D3DDB9B006AA2E3 /* LaunchScreen.storyboard */; };
+		CFC5C8991D3E040600F70B38 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5C8921D3E040600F70B38 /* NSObject+Parse.m */; };
+		CFC5C89A1D3E040600F70B38 /* NSString+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5C8941D3E040600F70B38 /* NSString+YX.m */; };
+		CFC5C89B1D3E040600F70B38 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5C8961D3E040600F70B38 /* UIScrollView+Refresh.m */; };
+		CFC5C89C1D3E040600F70B38 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5C8981D3E040600F70B38 /* UIView+HUD.m */; };
+		CFC5C89F1D3E041500F70B38 /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5C89E1D3E041500F70B38 /* BaseNetworking.m */; };
+		CFC5C8A21D3E042500F70B38 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5C8A11D3E042500F70B38 /* BaseViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,14 +28,27 @@
 		9E70E8AE51F769BB84CF6A03 /* Pods-WeiFan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiFan.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiFan/Pods-WeiFan.release.xcconfig"; sourceTree = "<group>"; };
 		CF238C841D3DDB9B006AA2E3 /* WeiFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF238C881D3DDB9B006AA2E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF238C8A1D3DDB9B006AA2E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CF238C8B1D3DDB9B006AA2E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CF238C8D1D3DDB9B006AA2E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CF238C8E1D3DDB9B006AA2E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF238C8A1D3DDB9B006AA2E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		CF238C8B1D3DDB9B006AA2E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		CF238C8D1D3DDB9B006AA2E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = WeiFan/ViewController.h; sourceTree = SOURCE_ROOT; };
+		CF238C8E1D3DDB9B006AA2E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = WeiFan/ViewController.m; sourceTree = SOURCE_ROOT; };
 		CF238C911D3DDB9B006AA2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CF238C931D3DDB9B006AA2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF238C931D3DDB9B006AA2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		CF238C961D3DDB9B006AA2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF238C981D3DDB9B006AA2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC5C8901D3E02F400F70B38 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CFC5C8911D3E040600F70B38 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
+		CFC5C8921D3E040600F70B38 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		CFC5C8931D3E040600F70B38 /* NSString+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YX.h"; sourceTree = "<group>"; };
+		CFC5C8941D3E040600F70B38 /* NSString+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YX.m"; sourceTree = "<group>"; };
+		CFC5C8951D3E040600F70B38 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		CFC5C8961D3E040600F70B38 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		CFC5C8971D3E040600F70B38 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		CFC5C8981D3E040600F70B38 /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		CFC5C89D1D3E041500F70B38 /* BaseNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworking.h; sourceTree = "<group>"; };
+		CFC5C89E1D3E041500F70B38 /* BaseNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
+		CFC5C8A01D3E042500F70B38 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		CFC5C8A11D3E042500F70B38 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +101,14 @@
 		CF238C861D3DDB9B006AA2E3 /* WeiFan */ = {
 			isa = PBXGroup;
 			children = (
-				CF238C8A1D3DDB9B006AA2E3 /* AppDelegate.h */,
-				CF238C8B1D3DDB9B006AA2E3 /* AppDelegate.m */,
-				CF238C8D1D3DDB9B006AA2E3 /* ViewController.h */,
-				CF238C8E1D3DDB9B006AA2E3 /* ViewController.m */,
-				CF238C901D3DDB9B006AA2E3 /* Main.storyboard */,
-				CF238C931D3DDB9B006AA2E3 /* Assets.xcassets */,
-				CF238C951D3DDB9B006AA2E3 /* LaunchScreen.storyboard */,
-				CF238C981D3DDB9B006AA2E3 /* Info.plist */,
+				CF238C9E1D3E0278006AA2E3 /* Category */,
+				CF238C9F1D3E0278006AA2E3 /* Model */,
+				CF238CA01D3E0278006AA2E3 /* NetManger */,
+				CF238CA11D3E0278006AA2E3 /* Resource */,
+				CF238CA21D3E0278006AA2E3 /* Vender */,
+				CF238CA31D3E0278006AA2E3 /* View */,
+				CF238CA41D3E0278006AA2E3 /* ViewController */,
+				CF238CA51D3E0278006AA2E3 /* ViewModel */,
 				CF238C871D3DDB9B006AA2E3 /* Supporting Files */,
 			);
 			path = WeiFan;
@@ -98,9 +117,86 @@
 		CF238C871D3DDB9B006AA2E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF238C981D3DDB9B006AA2E3 /* Info.plist */,
 				CF238C881D3DDB9B006AA2E3 /* main.m */,
+				CFC5C8901D3E02F400F70B38 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF238C9E1D3E0278006AA2E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5C8911D3E040600F70B38 /* NSObject+Parse.h */,
+				CFC5C8921D3E040600F70B38 /* NSObject+Parse.m */,
+				CFC5C8931D3E040600F70B38 /* NSString+YX.h */,
+				CFC5C8941D3E040600F70B38 /* NSString+YX.m */,
+				CFC5C8951D3E040600F70B38 /* UIScrollView+Refresh.h */,
+				CFC5C8961D3E040600F70B38 /* UIScrollView+Refresh.m */,
+				CFC5C8971D3E040600F70B38 /* UIView+HUD.h */,
+				CFC5C8981D3E040600F70B38 /* UIView+HUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CF238C9F1D3E0278006AA2E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF238CA01D3E0278006AA2E3 /* NetManger */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5C89D1D3E041500F70B38 /* BaseNetworking.h */,
+				CFC5C89E1D3E041500F70B38 /* BaseNetworking.m */,
+			);
+			path = NetManger;
+			sourceTree = "<group>";
+		};
+		CF238CA11D3E0278006AA2E3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CF238C901D3DDB9B006AA2E3 /* Main.storyboard */,
+				CF238C931D3DDB9B006AA2E3 /* Assets.xcassets */,
+				CF238C951D3DDB9B006AA2E3 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CF238CA21D3E0278006AA2E3 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		CF238CA31D3E0278006AA2E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF238CA41D3E0278006AA2E3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF238C8A1D3DDB9B006AA2E3 /* AppDelegate.h */,
+				CF238C8B1D3DDB9B006AA2E3 /* AppDelegate.m */,
+				CF238C8D1D3DDB9B006AA2E3 /* ViewController.h */,
+				CF238C8E1D3DDB9B006AA2E3 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CF238CA51D3E0278006AA2E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5C8A01D3E042500F70B38 /* BaseViewModel.h */,
+				CFC5C8A11D3E042500F70B38 /* BaseViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC5C89C1D3E040600F70B38 /* UIView+HUD.m in Sources */,
 				CF238C8F1D3DDB9B006AA2E3 /* ViewController.m in Sources */,
+				CFC5C89B1D3E040600F70B38 /* UIScrollView+Refresh.m in Sources */,
+				CFC5C8991D3E040600F70B38 /* NSObject+Parse.m in Sources */,
+				CFC5C8A21D3E042500F70B38 /* BaseViewModel.m in Sources */,
+				CFC5C89A1D3E040600F70B38 /* NSString+YX.m in Sources */,
 				CF238C8C1D3DDB9B006AA2E3 /* AppDelegate.m in Sources */,
+				CFC5C89F1D3E041500F70B38 /* BaseNetworking.m in Sources */,
 				CF238C891D3DDB9B006AA2E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +342,7 @@
 				CF238C911D3DDB9B006AA2E3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CF238C951D3DDB9B006AA2E3 /* LaunchScreen.storyboard */ = {
@@ -248,6 +351,7 @@
 				CF238C961D3DDB9B006AA2E3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +442,7 @@
 			baseConfigurationReference = 36C60BF564329857B3EE613C /* Pods-WeiFan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = WeiFan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tedu.WeiFan;
@@ -350,6 +455,7 @@
 			baseConfigurationReference = 9E70E8AE51F769BB84CF6A03 /* Pods-WeiFan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = WeiFan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tedu.WeiFan;
