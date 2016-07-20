@@ -7,11 +7,11 @@
 //
 
 #import "BaseNetworking.h"
-#import "RequestPath.h"
+
 @implementation BaseNetworking
 + (id)GET:(NSString *)path parameters:(NSDictionary *)parameters completionHandler:(void (^)(id, NSError *))completionHandler{
     //BaseURL 会被添加到每一个请求的开头
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithBaseURL:kBasePath.yx_URL];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", @"text/plain", nil];
     return [manager GET:path parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@", task.currentRequest.URL.absoluteString);
