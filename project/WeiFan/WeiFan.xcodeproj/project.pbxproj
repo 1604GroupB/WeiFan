@@ -75,12 +75,16 @@
 		CFC5C89E1D3E041500F70B38 /* BaseNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
 		CFC5C8A01D3E042500F70B38 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		CFC5C8A11D3E042500F70B38 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CFC5C8A41D3E13C900F70B38 /* MainTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarView.h; sourceTree = "<group>"; };
 		CFC5C8A51D3E13C900F70B38 /* MainTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarView.m; sourceTree = "<group>"; };
 		CFC5C8A71D3E144800F70B38 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		CFC5C8A81D3E144800F70B38 /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		CFC5C8AA1D3E147600F70B38 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		CFC5C8AB1D3E147600F70B38 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+=======
+		D329B82E1D3F044900EECE5C /* RequestPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestPath.h; sourceTree = "<group>"; };
+>>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +137,12 @@
 		CF238C861D3DDB9B006AA2E3 /* WeiFan */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				CF238C8A1D3DDB9B006AA2E3 /* AppDelegate.h */,
 				CF238C8B1D3DDB9B006AA2E3 /* AppDelegate.m */,
+=======
+				D329B82C1D3F03F400EECE5C /* Define */,
+>>>>>>> origin/master
 				CF238C9E1D3E0278006AA2E3 /* Category */,
 				CF238C9F1D3E0278006AA2E3 /* Model */,
 				CF238CA01D3E0278006AA2E3 /* NetManger */,
@@ -235,6 +243,7 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CFB47B091D3FA336002863C1 /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +272,14 @@
 				CFC5C8AB1D3E147600F70B38 /* FindViewController.m */,
 			);
 			path = MainTabBar;
+=======
+		D329B82C1D3F03F400EECE5C /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				D329B82E1D3F044900EECE5C /* RequestPath.h */,
+			);
+			path = Define;
+>>>>>>> origin/master
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
