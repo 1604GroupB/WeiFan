@@ -49,6 +49,7 @@
 		CFC5C89E1D3E041500F70B38 /* BaseNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
 		CFC5C8A01D3E042500F70B38 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		CFC5C8A11D3E042500F70B38 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		D329B82E1D3F044900EECE5C /* RequestPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestPath.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		CF238C861D3DDB9B006AA2E3 /* WeiFan */ = {
 			isa = PBXGroup;
 			children = (
+				D329B82C1D3F03F400EECE5C /* Define */,
 				CF238C9E1D3E0278006AA2E3 /* Category */,
 				CF238C9F1D3E0278006AA2E3 /* Model */,
 				CF238CA01D3E0278006AA2E3 /* NetManger */,
@@ -197,6 +199,14 @@
 				CFC5C8A11D3E042500F70B38 /* BaseViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D329B82C1D3F03F400EECE5C /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				D329B82E1D3F044900EECE5C /* RequestPath.h */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
