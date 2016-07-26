@@ -16,6 +16,11 @@ typedef NS_ENUM(NSUInteger, RequestMode) {
 @interface BaseViewModel : NSObject
 @property (nonatomic) NSURLSessionDataTask *dataTask;
 - (void)getDataWithMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler;
+- (void)getModelWorkersWithMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler;
+- (void)getReviewWithMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler;
+- (void)getTagsWithMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler;
+
+
 @end
 
 

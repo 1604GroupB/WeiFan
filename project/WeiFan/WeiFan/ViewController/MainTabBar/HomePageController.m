@@ -8,6 +8,8 @@
 
 #import "HomePageController.h"
 #import "ViewController.h"
+#import "UserMy.h"
+#import "startraceViewController.h"
 @interface HomePageController ()
 
 @end
@@ -42,25 +44,27 @@
 
 - (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index
 {
-//    switch (index) {
-//        case 0:
-//        {
-//            
-//        }
-//            break;
-//        case 1:
-//        {
-//            
-//        }
-//            break;
-//        case 2:
-//        {
-//            ViewController *vc = [[ViewController alloc]init];
-//        }
-//            break;
-//    }
-    //return [UIViewController new];
-    return [ViewController new];
+    switch (index) {
+        case 0:
+        {
+            
+        }
+            break;
+        case 1:
+        {
+            startraceViewController *vc = [startraceViewController new];
+            return vc;
+        }
+            break;
+        case 2:
+        {
+            ViewController *vc = [[ViewController alloc]init];
+            return vc;
+        }
+            break;
+    }
+    return [UIViewController new];
+    
 }
 
 
@@ -78,7 +82,8 @@
 
 -(void)leftBtnAction:sender
 {
-    
+    UserMy *user = [UserMy new];
+    [self.navigationController pushViewController:user animated:YES];
 }
 
 - (void)rightBtnAction:sender

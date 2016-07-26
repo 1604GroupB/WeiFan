@@ -8,7 +8,7 @@
 
 #import "MainTabBarView.h"
 #import "HomePageController.h"
-#import "FindViewController.h"
+#import "FindTableViewController.h"
 #import "CustomTabBar.h"
 @interface MainTabBarView ()
 
@@ -22,14 +22,14 @@
     
     
     HomePageController *home = [[HomePageController alloc]initWithCustom];
-    FindViewController *find = [FindViewController new];
+    FindTableViewController *find = [FindTableViewController new];
     
     
     
-    home.tabBarItem.image = [UIImage imageNamed:@"tabbar_icon_home"];
-    home.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_icon_home_selected"];
-    find.tabBarItem.image = [UIImage imageNamed:@"tabbar_icon_find"];
-    find.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_icon_find_selected"];
+    home.tabBarItem.image = [[UIImage imageNamed:@"tabbar_icon_home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    home.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_icon_home_selected"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    find.tabBarItem.image = [[UIImage imageNamed:@"tabbar_icon_find"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    find.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_icon_find_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     home.title = @"首页";
     find.title = @"发现";

@@ -10,4 +10,10 @@
 
 @implementation BaseViewModel
 - (void)getDataWithMode:(RequestMode)requestMode completionHandler:(void (^)(NSError *))completionHandler{}
+- (void)getModelWorkersWithMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler{}
+- (void)getReviewWithMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler{}
+- (void)getTagsWithMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler{}
+
+
+
 @end

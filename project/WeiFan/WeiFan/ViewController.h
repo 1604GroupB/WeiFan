@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ActivityViewModel.h"
 @interface ViewController : UITableViewController
 
 

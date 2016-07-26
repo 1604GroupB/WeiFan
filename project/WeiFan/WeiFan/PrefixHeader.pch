@@ -26,5 +26,6 @@
 #import "NSString+YX.h"
 #import "UIScrollView+Refresh.h"
 #import "UIView+HUD.h"
-
+#import "RequestPath.h"
+#import "XingZhongPath.h"
 #endif /* PrefixHeader_pch */
