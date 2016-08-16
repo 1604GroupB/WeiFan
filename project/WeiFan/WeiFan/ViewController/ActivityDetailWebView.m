@@ -1,47 +1,41 @@
 //
-//  SearchViewController.m
+//  ActivityDetailWebView.m
 //  WeiFan
 //
-//  Created by tarena002 on 16/7/26.
+//  Created by tarena002 on 16/7/28.
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "ActivityDetailWebView.h"
 
-@interface SearchViewController ()
+@interface ActivityDetailWebView ()
 
 @end
 
-@implementation SearchViewController
+@implementation ActivityDetailWebView
 
-- (UITableView *)secondView {
-    if(_secondView == nil) {
-        _secondView = [[UITableView alloc] init];
+- (instancetype)initWithURL:(NSURL *)URL
+{
+    if (self = [super init])
+    {
+        _URL = URL;
     }
-    return _secondView;
-}
-
-- (UICollectionView *)firstView {
-    if(_firstView == nil) {
-        UICollectionViewLayout *layout = [UICollectionViewLayout new];
-        
-        _firstView = [[UICollectionView alloc] init];
-        
-    }
-    return _firstView;
-}
-
-- (UITableView *)thirdView {
-    if(_thirdView == nil) {
-        _thirdView = [[UITableView alloc] init];
-    }
-    return _thirdView;
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    UIWebView *web = [[UIWebView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:web];
+    
+    [web loadRequest:[NSURLRequest requestWithURL:_URL]];
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

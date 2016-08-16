@@ -23,7 +23,9 @@
         self.showOnNavigationBar = YES;
         self.menuBGColor = [UIColor clearColor];
         self.menuViewStyle = WMMenuViewStyleLine;
-        self.menuItemWidth = 40;
+        self.menuItemWidth = 50;
+        self.titleSizeNormal = 22;
+        self.titleSizeSelected = 22;
         self.progressColor = [UIColor orangeColor];
         self.titleColorSelected = [UIColor orangeColor];
         self.menuHeight = 44;

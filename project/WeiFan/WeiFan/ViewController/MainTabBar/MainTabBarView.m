@@ -20,6 +20,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //设置全局
+    //修改某个控件的某个属性的默认值（全局）appearance
+    [UITabBar appearance].translucent = NO;
+    [UINavigationBar appearance].translucent = NO;
+    
+    //使用电脑系统里的数码测色计工具找到对应的颜色
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:250/255.0 green:192/255.0 blue:12/255.0 alpha:1.0];
+    
+    //设置tabbar各控制器title（文字直播、我的等）的颜色
+    //tintColor的作用就是会影响所有子视图的高亮颜色
+    [UITabBar appearance].tintColor = [UIColor colorWithRed:250/255.0 green:165/255.0 blue:10/255.0 alpha:1.0];
+    
+    
     
     HomePageController *home = [[HomePageController alloc]initWithCustom];
     FindTableViewController *find = [FindTableViewController new];
@@ -37,6 +50,8 @@
 
     [self addChildViewController:[[UINavigationController alloc]initWithRootViewController:home]];
     [self addChildViewController:[[UINavigationController alloc]initWithRootViewController:find]];
+//    [self addChildViewController:[[UINavigationController alloc]initWithRootViewController:[UIViewController new]]];
+//    [self addChildViewController:[[UINavigationController alloc]initWithRootViewController:[UIViewController new]]];
     
     
     
@@ -45,6 +60,8 @@
     //KVC
     [self setValue:tabbar forKey:@"tabBar"];
     self.tabBar.tintColor = [UIColor orangeColor];
+    
+   
     
     
 }

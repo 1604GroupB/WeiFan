@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ActivityCell.h"
+#import "ActivityDetailWebView.h"
 @interface ViewController ()
 @property (nonatomic) ActivityViewModel *activityVM;
 @end
@@ -81,7 +82,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    ActivityDetailWebView *vc = [[ActivityDetailWebView alloc]initWithURL:[self.activityVM detailURLForRow:indexPath.section]];
+    //push过去后，隐藏tabbar
+    vc.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -14,7 +14,7 @@
 //看UI
 @property (nonatomic) NSInteger numOfSection;
 - (NSURL*)iconURL:(NSInteger)row;
-- (NSURL*)smallIconURL:(NSInteger)row;
+//- (NSURL*)smallIconURL:(NSInteger)row;
 - (NSString*)titleForRow:(NSInteger)row;
 - (NSString*)dateForRow:(NSInteger)row;
 - (BOOL)isOnlineActivity:(NSInteger)row;//***************是不是线上活动
@@ -25,6 +25,9 @@
 - (UIImage*)isFeeIconForRow:(NSInteger)row;
 @property (nonatomic) BOOL isFee;
 - (NSString*)rmbForRow:(NSInteger)row;
+
+//详情页
+- (NSURL*)detailURLForRow:(NSInteger)row;
 
 //看Model
 @property (nonatomic) NSMutableArray <ActivityDatastrModel*> *dataList;

@@ -13,8 +13,9 @@
 
 //活动页面请求地址
 #define kActivityDatePath @"QueryActList/index.do?pageSize=10&startRow=%ld"
+//活动详情页请求
+#define kActivityDetailDatePath @"QueryActDetail/index.do?actId=%@"
 
-
-
+#define kActivityDetailPath @"http://mx.wefans.com/appshare/actDetail.html?actId=%@"
 
 #endif /* RequestPath_h */

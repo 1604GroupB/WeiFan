@@ -17,6 +17,14 @@
     }];
 }
 
++ (id)getActivityDetailViewDataWith:(NSString *)actId completionHandler:(void (^)(ActivityDetailModel *, NSError *))completionHandler
+{
+    NSString *path = [NSString stringWithFormat:kActivityDetailDatePath,actId];
+    return [self GET:path parameters:nil completionHandler:^(id repsonseObj, NSError *error) {
+        !completionHandler ?: completionHandler([ActivityDetailModel parse:repsonseObj],error);
+    }];
+}
+
 #pragma xiongzong
 //今日推荐
 +(id)getToDaycompletionHandler:(void (^)(RecommendationModel *, NSError *))completionHandler{

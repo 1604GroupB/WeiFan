@@ -8,10 +8,14 @@
 
 #import "BaseNetworking.h"
 #import "ActivityModel.h"
+#import "ActivityDetailModel.h"
 #import "RecommendationModel.h"
 
 @interface NetManger : BaseNetworking
+//活动页
 +(id)getActivityViewDataWith:(NSInteger)startRow completionHandler:(void(^)(ActivityModel *model,NSError *error))completionHandler;
+//活动详情页
++(id)getActivityDetailViewDataWith:(NSString*)actId completionHandler:(void (^)(ActivityDetailModel *, NSError *))completionHandler;
 
 //星踪
 +getToDaycompletionHandler:(void(^)(RecommendationModel *model , NSError *error))completionHandler;

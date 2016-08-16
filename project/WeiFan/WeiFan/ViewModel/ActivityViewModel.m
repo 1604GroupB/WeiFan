@@ -123,10 +123,18 @@
     return @"";
 }
 
+- (NSURL *)detailURLForRow:(NSInteger)row
+{
+    NSString *aid = [@(self.dataList[row].actInfoId) stringValue];
+    return [NSString stringWithFormat:kActivityDetailPath,aid].yx_URL;
+}
+
 - (NSMutableArray <ActivityDatastrModel*> *)dataList {
     if(_dataList == nil) {
         _dataList = [NSMutableArray new];
     }
     return _dataList;
 }
+
+
 @end

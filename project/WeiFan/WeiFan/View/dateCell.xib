@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="KGk-i7-Jjw" customClass="dateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeE-AV-SdT">
+                        <rect key="frame" x="34" y="4" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07a-T1-C2x">
+                        <rect key="frame" x="34" y="29" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_schedule_detail_date" translatesAutoresizingMaskIntoConstraints="NO" id="5Wg-Tl-o1w">
+                        <rect key="frame" x="4" y="4" width="22" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WKd-j0-aOk"/>
+                            <constraint firstAttribute="width" constant="22" id="uHZ-8i-1gq"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="07a-T1-C2x" secondAttribute="bottom" constant="4" id="MZU-3f-cAj"/>
+                    <constraint firstItem="5Wg-Tl-o1w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="NIt-bS-PlZ"/>
+                    <constraint firstItem="5Wg-Tl-o1w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="SrX-jz-Bow"/>
+                    <constraint firstItem="WeE-AV-SdT" firstAttribute="leading" secondItem="5Wg-Tl-o1w" secondAttribute="trailing" constant="8" id="cWg-oK-UVj"/>
+                    <constraint firstItem="07a-T1-C2x" firstAttribute="top" secondItem="WeE-AV-SdT" secondAttribute="bottom" constant="4" id="gPg-4M-fbE"/>
+                    <constraint firstItem="07a-T1-C2x" firstAttribute="leading" secondItem="WeE-AV-SdT" secondAttribute="leading" id="gW9-gK-f1q"/>
+                    <constraint firstItem="WeE-AV-SdT" firstAttribute="centerY" secondItem="5Wg-Tl-o1w" secondAttribute="centerY" id="mme-eT-s4C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DelayDateLb" destination="07a-T1-C2x" id="ZSa-T1-Kab"/>
+                <outlet property="dateLb" destination="WeE-AV-SdT" id="yyu-EH-iFb"/>
+            </connections>
+            <point key="canvasLocation" x="-50" y="225"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_schedule_detail_date" width="11" height="11"/>
+    </resources>
+</document>
